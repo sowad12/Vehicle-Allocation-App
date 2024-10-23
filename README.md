@@ -6,7 +6,7 @@
 - [Deploy and maintain this project](#Short_brief)
 
 # Requirements
-Python 3.12 and Later
+Python 3.12 and Later &
 Mongodb 
 # Installation
 ```bash

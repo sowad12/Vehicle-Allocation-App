@@ -29,6 +29,13 @@ pip install -r requirments.txt
 # run
 uvicorn main:app --reload    
 
+#Url Link
+ http://localhost:8000/docs
+
+#then run seeder api from swagger
+![alt text](image.png)
+
+ Run the seeder to populate default values before testing CRUD operations from Swagger.
 
 ```
 # Docker_Pull

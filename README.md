@@ -34,7 +34,7 @@ uvicorn main:app --reload
 
 #then run seeder api from swagger
 Run the seeder to populate default values before testing CRUD operations from Swagger.
-external/seeder_api_v1_seeder_post
+api/v1/seeder
 ```
 # Docker_Pull
 ```bash

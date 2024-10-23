@@ -5,15 +5,13 @@ The Exsited Python SDK provides an easy-to-use library for integrating Exsited s
 ## Table of Contents
 - [Requirements](#Requirements)
 - [Installation](#Installation)
-- [Configuration](#Configuration)
-- [Authentication](#Authentication)
 - [Getting Started](#Getting-Started)
 - [Testing](#Testing)
 - [API Documentation](#API-Documentation)
 - [Usage charge_item_uuid Association](#Usage-charge_item_uuid-Association)
 # Requirements
 Python 3.12 and Later
-
+Mongodb 
 # Installation
 ```bash
 #Navigate to the project directory
@@ -46,18 +44,6 @@ pip install mysql-connector-python
 ```
 
 
-# Configuration
-
-To set up the Exsited SDK, you'll require your `Client ID`, `Client Secret`, and `Redirect URL`. If you have not received these details already, please reach out to your designated client contact to obtain them
-
-
-
-# Authentication
-1. **Locate `common_data.py`:** Open the SKD project directory on an IDE and navigate to the `common_data.py` file which is located in the following path: `tests/common/common_data.py`.
-2. **Update `get_request_token_dto` function:** Within the `common_data.py` class, locate the method named `get_request_token_dto` and update it with the credentials you were provided.
-<img src="blob:https://webalive.atlassian.net/c058a466-42ce-405e-b3ca-dfbbb81a9939#media-blob-url=true&id=ee9aff06-3e79-4823-b0bf-9ef83f5d3c9a&collection=contentId-558825510&contextId=558825510&mimeType=image%2Fpng&name=image.png&size=435487&width=2049&height=922&alt=image.png" alt="">
-
-3. **Provide Credential Values:** Populate the mandatory fields (`clientId`, `clientSecret`, `redirectUri`, and `ExsitedUrl`) within the `RequestTokenDTO` object. However, **replace the placeholder values**  in the following code block with your actual credentials:
 
 ### Code Example:
 ```python

@@ -33,9 +33,12 @@ uvicorn main:app --reload
 
 ```
 # Docker_Pull
+```bash
+#  pull image
 docker pull sowad/allocation:v1
+#  run and create container
 docker run -d -p 8000:8000 sowad/allocation:v1
-
+```
 # Short_brief
 To deploy this FastAPI project, I would push the Docker images to a container registry like Docker Hub and use a cloud platform such as AWS or Google Cloud for orchestration. For maintenance, I would implement monitoring tools to track application performance, schedule regular backups of the Redis database, and ensure that dependencies are updated periodically to maintain security and stability.
 

@@ -33,10 +33,8 @@ uvicorn main:app --reload
  http://localhost:8000/docs
 
 #then run seeder api from swagger
-![image](https://github.com/user-attachments/assets/51ab1cbc-21f9-4f59-995a-87688e7f2d7e)
-
- Run the seeder to populate default values before testing CRUD operations from Swagger.
-
+Run the seeder to populate default values before testing CRUD operations from Swagger.
+external/seeder_api_v1_seeder_post
 ```
 # Docker_Pull
 ```bash

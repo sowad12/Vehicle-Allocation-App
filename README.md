@@ -1,12 +1,9 @@
-# Exsited Python SDK
-The Exsited Python SDK provides an easy-to-use library for integrating Exsited services into your project. This includes Custom Integration, Onsite Integration and all APIs.
 
-***
 ## Table of Contents
 - [Requirements](#Requirements)
 - [Installation](#Installation)
 - [Docker_Pull](#Docker_Pull)
-- [deploy and maintain this project](#Short_brief)
+- [Deploy and maintain this project](#Short_brief)
 
 # Requirements
 Python 3.12 and Later

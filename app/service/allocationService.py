@@ -5,6 +5,21 @@ from fastapi import FastAPI,APIRouter, HTTPException
 from app.models import *
 from app.query import *
 from app.config.dbconn import allocations_collection,employees_collection,vehicles_collection,drivers_collection
+# from redis import Redis
+# import json
+
+#caching using redis
+# redis_client = Redis(host='redis', port=6379, db=0, decode_responses=True)
+
+# def cache_set(key: str, value: any, expiration: int = 60):  
+#     redis_client.set(key, json.dumps(value), ex=expiration)
+
+# def cache_get(key: str):
+#     value = redis_client.get(key)
+#     if value:
+#         return json.loads(value)
+#     return None
+
 
 
 async def create_allocation_service(allocation: AllocationCreate):
@@ -174,14 +189,21 @@ async def fetch_allocation_history(allocation: AllocationGet):
         
 async def drivers_get():       
             try:
+            #  cached_drivers = cache_get("drivers")
+             
+            #  if cached_drivers:
+            #     return cached_drivers    
+            
              drivers = await drivers_collection.find({}).to_list(length=None)
              
              if not drivers:
                 raise HTTPException(status_code=404, detail="drivers not found")      
             
              for driver in drivers:
-                  driver['_id'] = str(driver['_id'])     
-                   
+                  driver['_id'] = str(driver['_id'])   
+                    
+            #  cache_set("drivers", drivers, expiration=60)    
+               
              return drivers
                      
             except HTTPException as ex:               

@@ -1,3 +1,5 @@
+version: '3'
+
 services:
   # FastAPI service
   fastapi:
@@ -8,6 +10,12 @@ services:
     ports:
       - "8000:8000"
     env_file: 
-      - .env  # Load environment variables from the .env file
+      - .env 
     volumes:
-      - .:/app
+      - .:/app  
+
+  # # Redis service
+  # redis:
+  #   image: redis:latest 
+  #   ports:
+  #     - "6379:6379"

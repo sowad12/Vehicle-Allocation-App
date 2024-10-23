@@ -33,7 +33,7 @@ uvicorn main:app --reload
  http://localhost:8000/docs
 
 #then run seeder api from swagger
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/51ab1cbc-21f9-4f59-995a-87688e7f2d7e)
 
  Run the seeder to populate default values before testing CRUD operations from Swagger.
 

@@ -10,8 +10,6 @@ Python 3.12 and Later
 Mongodb 
 # Installation
 ```bash
-#Navigate to the project directory
-cd exsited-python
 
 # Install virtualenv
 pip install virtualenv
@@ -28,6 +26,7 @@ python -m pip install --upgrade pip
 # Install all modules
 pip install -r requirments.txt
 
+# run
 uvicorn main:app --reload    
 
 
